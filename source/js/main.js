@@ -6,6 +6,7 @@ $(function () {
     mouseWheel($slider);
   }).slick({
     dots: false,
+    arrows: false,
     infinite: false
   });
 

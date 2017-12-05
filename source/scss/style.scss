@@ -4,15 +4,41 @@ body {
   margin: 0;
   padding: 0;
 }
+
 * {
   box-sizing: border-box;
 }
+
 *:before,
 *:after {
   box-sizing: border-box;
 }
-.clearfix:after {
-  content: '';
-  display: table;
-  clear: both;
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.slider {
+  margin: 30px 50px;
+}
+
+.slick-slide {
+  background: $c1;
+  color: white;
+  padding: 40px 0;
+  font-size: 30px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  text-align: center;
+}
+
+.slick-prev,
+.slick-next {
+  &::before {
+    color: black;
+  }
+}
+
+.slick-slide:nth-child(odd) {
+  background: $c2;
 }
